@@ -38,11 +38,20 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button size="lg" className="text-lg px-8 py-6 shadow-glow hover:shadow-lg transition-smooth group">
+            <Button 
+              size="lg" 
+              className="text-lg px-8 py-6 shadow-glow hover:shadow-lg transition-smooth group"
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Get Started
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-smooth" />
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 hover:bg-secondary/50 transition-smooth">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-lg px-8 py-6 border-2 hover:bg-secondary/50 transition-smooth"
+              onClick={() => document.getElementById('case-studies')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               View Our Work
             </Button>
           </div>
